@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Feminine 🎀</title>
+
+<style>
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: linear-gradient(135deg, #fff0f7, #f5edff);
+  color: #4b3545;
+}
+
+header {
+  background: linear-gradient(135deg, #ff8fbd, #b88cff);
+  color: white;
+  padding: 28px 20px;
+  border-radius: 0 0 30px 30px;
+  text-align: center;
+  box-shadow: 0 5px 20px #0002;
+}
+
+header h1 {
+  margin: 0;
+  font-size: 35px;
+}
+
+header p {
+  margin: 8px 0 0;
+  font-size: 16px;
+}
+
+.container {
+  padding: 20px;
+  max-width: 700px;
+  margin: auto;
+}
+
+.welcome {
+  background: white;
+  padding: 20px;
+  border-radius: 22px;
+  margin-bottom: 20px;
+  box-shadow: 0 5px 15px #0001;
+}
+
+.welcome h2 {
+  margin-top: 0;
+  color: #d85b93;
+}
+
+.cards {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 15px;
+}
+
+.card {
+  background: white;
+  border-radius: 22px;
+  padding: 22px 12px;
+  text-align: center;
+  box-shadow: 0 5px 15px #0001;
+  cursor: pointer;
+  transition: .2s;
+}
+
+.card:hover {
+  transform: translateY(-4px);
+}
+
+.icon {
+  font-size: 42px;
+}
+
+.card h3 {
+  margin: 10px 0 5px;
+  color: #c95289;
+}
+
+.card p {
+  font-size: 13px;
+  color: #777;
+}
+
+.section {
+  display: none;
+  background: white;
+  margin-top: 20px;
+  padding: 20px;
+  border-radius: 22px;
+  box-shadow: 0 5px 15px #0001;
+}
+
+.section.active {
+  display: block;
+}
+
+.section h2 {
+  color: #c95289;
+}
+
+.idea {
+  background: #fff3f8;
+  border-radius: 16px;
+  padding: 15px;
+  margin: 10px 0;
+}
+
+button {
+  border: none;
+  background: linear-gradient(135deg, #ff82b5, #ad82ff);
+  color: white;
+  padding: 12px 20px;
+  border-radius: 20px;
+  font-size: 15px;
+  cursor: pointer;
+}
+
+footer {
+  text-align: center;
+  padding: 25px;
+  color: #987;
+  font-size: 13px;
+}
+</style>
+</head>
+
+<body>
+
+<header>
+  <h1>Feminine 🎀</h1>
+  <p>تعلمي • ابتكري • استمتعي بوقتك 💕</p>
+</header>
+
+<div class="container">
+
+  <div class="welcome">
+    <h2>أهلاً بيكي في Feminine 🌷</h2>
+    <p>
+      مكان صغير ولطيف تتعلمي فيه مهارات وهوايات جديدة
+      من البيت وتستمتعي بوقت فراغك ✨
+    </p>
+  </div>
+
+  <div class="cards">
+
+    <div class="card" onclick="showSection('crafts')">
+      <div class="icon">🧶</div>
+      <h3>أشغال يدوية</h3>
+      <p>أفكار سهلة ولطيفة</p>
+    </div>
+
+    <div class="card" onclick="showSection('drawing')">
+      <div class="icon">🎨</div>
+      <h3>رسم</h3>
+      <p>طلعي الفنانة اللي جواكي</p>
+    </div>
+
+    <div class="card" onclick="showSection('letters')">
+      <div class="icon">🔤</div>
+      <h3>تعلم الحروف</h3>
+      <p>تعلمي بطريقة ممتعة</p>
+    </div>
+
+    <div class="card" onclick="showSection('ideas')">
+      <div class="icon">💡</div>
+      <h3>أفكار وقت الفراغ</h3>
+      <p>متخليش الملل يكسب 😄</p>
+    </div>
+
+  </div>
+
+  <div id="crafts" class="section">
+    <h2>🧶 أشغال يدوية</h2>
+
+    <div class="idea">
+      <b>🌸 وردة من الورق</b>
+      <p>استخدمي ورق ملون ومقص وغراء واعملي وردة جميلة.</p>
+    </div>
+
+    <div class="idea">
+      <b>🎀 سوار بسيط</b>
+      <p>اعملي سوار باستخدام خيوط ملونة أو شرائط.</p>
+    </div>
+
+    <div class="idea">
+      <b>📔 تزيين الدفتر</b>
+      <p>زيني أول صفحة بملصقات ورسومات وألوانك المفضلة.</p>
+    </div>
+
+    <button onclick="hideSections()">رجوع 🏠</button>
+  </div>
+
+  <div id="drawing" class="section">
+    <h2>🎨 الرسم</h2>
+
+    <div class="idea">
+      <b>🌷 ارسمِي وردة</b>
+      <p>ابدئي بدائرة صغيرة ثم أضيفي بتلات حولها.</p>
+    </div>
+
+    <div class="idea">
+      <b>🦋 ارسمِي فراشة</b>
+      <p>ارسمي جسم الفراشة ثم جناحين وزينيهما بالألوان.</p>
+    </div>
+
+    <div class="idea">
+      <b>🌙 ارسمِي سماء ليلية</b>
+      <p>جربي رسم القمر والنجوم والسحب بطريقة بسيطة.</p>
+    </div>
+
+    <button onclick="hideSections()">رجوع 🏠</button>
+  </div>
+
+  <div id="letters" class="section">
+    <h2>🔤 تعلم الحروف</h2>
+
+    <div class="idea">
+      <b>حرف اليوم: أ 🌷</b>
+      <p>أ مثل: أسد 🦁 — أرنب 🐰 — أزهار 🌸</p>
+    </div>
+
+    <div class="idea">
+      <b>حرف اليوم: ب 🎀</b>
+      <p>ب مثل: بطة 🦆 — بحر 🌊 — بيت 🏠</p>
+    </div>
+
+    <div class="idea">
+      <b>حرف اليوم: م 🌙</b>
+      <p>م مثل: موز 🍌 — ماء 💧 — مفتاح 🔑</p>
+    </div>
+
+    <button onclick="hideSections()">رجوع 🏠</button>
+  </div>
+
+  <div id="ideas" class="section">
+    <h2>💡 أفكار لوقت الفراغ</h2>
+
+    <div class="idea">📖 اقرئي عدة صفحات من كتاب تحبيه.</div>
+    <div class="idea">🎧 اسمعي موسيقى أو بودكاست مناسب.</div>
+    <div class="idea">📝 اكتبي يومياتك أو أهداف الأسبوع.</div>
+    <div class="idea">🧁 جربي وصفة سهلة مع أحد أفراد عائلتك.</div>
+    <div class="idea">🧶 تعلمي مهارة يدوية جديدة.</div>
+    <div class="idea">🎨 جربي رسم شيء لم ترسميه من قبل.</div>
+
+    <button onclick="hideSections()">رجوع 🏠</button>
+  </div>
+
+</div>
+
+<footer>
+  صنع بحب لـ Feminine 🎀💕
+</footer>
+
+<script>
+
+function showSection(id) {
+  document.querySelectorAll('.section').forEach(section => {
+    section.classList.remove('active');
+  });
+
+  document.getElementById(id).classList.add('active');
+
+  window.scrollTo({
+    top: document.getElementById(id).offsetTop - 20,
+    behavior: 'smooth'
+  });
+}
+
+function hideSections() {
+  document.querySelectorAll('.section').forEach(section => {
+    section.classList.remove('active');
+  });
+
+  window.scrollTo({
+    top: 0,
+    behavior: 'smooth'
+  });
+}
+
+</script>
+
+</body>
+  </html>
